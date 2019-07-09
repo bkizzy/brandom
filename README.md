@@ -2,7 +2,7 @@
 My take on making a /dev/random clone. Exploring the concepts related to generating entropy.
 
 # How it works
-When run this python script creates an entropy pool file called 'brandom' which contains a series of random bytes sourced from random.org's cosmic noise antenna. When the full poolsize is reached, the file is overwritten again with new values, this way we always have fresh random bytes in the file.
+When run this python script creates an entropy pool file called 'brandom' which contains a series of random bytes sourced from random.org's cosmic noise antenna. When the full poolsize is reached, the file is overwritten again with new values. In this way we always have fresh random bytes in the file.
 
 # How to run it
 >>nohup python brandom.py > log.out
